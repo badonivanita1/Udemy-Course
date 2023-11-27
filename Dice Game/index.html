@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-board">
+        <!-- Player-Container -->
+        <div class="container" id="player-area">
+            <!-- Player 1 -->
+            <div class="player player1 active" id="player1">
+                <h2>Player 1</h2>
+                <p class="score">0</p>
+                <div class="current">
+                    <p>Current</p>
+                    <p class="current-score">0</p>
+                </div>
+            </div>
+            <!-- Player-2 -->
+            <div class="player player2" id="player2">
+                <h2>Player 2</h2>
+                <p class="score">0</p>
+                <div class="current">
+                    <p>Current</p>
+                    <p class="current-score">0</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="button-board">
+            <button onclick="reset()">New Game</button>
+            <div class="img-div"><img id="image-of-dice" src="" alt="" height="100%" width="100%"></div>
+            <button onclick="rollDiceFunction()">Roll Dice</button>
+            <button onclick="hold()">hold</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
